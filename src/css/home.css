@@ -1,0 +1,342 @@
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 20em;
+}
+.search{
+    display: flex;
+    justify-items: flex-end;
+}
+.list{
+    list-style-type: none;
+    display: flex;
+    gap: 3em;
+    color: #ffffff;
+    margin-top: 2em;
+}
+.header{
+    position: absolute;
+    top: 0em;
+    width: 98.5vw;
+}
+.heading{
+    position: absolute;
+    top: 12em;
+    color: #ffffff;
+    left: 7em;
+    width: 50vw !important;
+    display: flex;
+}
+.divider{
+    height: 16px;
+    border-left: 1px solid #ffffff;
+    margin-left: 2.5em;
+}
+.box{
+    border: 1px solid #ffffff;
+    height: 5vh;
+    width: 5vw;
+}
+.txt{
+    font-size: 80px !important;
+}
+.txt1{
+    font-size: 24px;
+    width: 600px;
+}
+.circle{
+    border: 1px solid #ffffff;
+    border-radius: 65px;
+    width: 10vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+.label{
+    display: flex; 
+    justify-items: center;
+    align-items: center; 
+    left: 15em;
+    position: absolute;
+    top: 33em;
+    width: 65vw;
+}
+.img1{
+    position: relative;
+    top: 0.5em;
+    right: 0.5em;
+    height: 300px;
+    background-color: #111229;
+    width: 13vw;
+    border-radius: 20px;
+    color:#ffffff;
+    background: linear-gradient(163.41deg, #301A68 0.11%, #234C97 170.69%);
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px #301A68;
+}
+.background2{
+    position: absolute;
+    height: 300px;
+    width: 13vw;
+    background: linear-gradient(163.41deg, #301A68 0.11%, #234C97 170.69%);
+    border-radius: 8px;
+}
+.tag{
+    background-color: #E5C558;
+    color: #000000;
+    font-size: 11px;
+    width: fit-content;
+    padding: 2px;
+}
+.info{
+    font-size: 12px;
+    color: #0259EB;
+}
+.shows{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.reviews{
+    color: #ffffff;
+    display: flex;
+    gap: 42em;
+    margin-bottom: 2em;
+}
+.background{
+    position: absolute;
+    height: 23vh;
+    width: 20vw;
+    background: linear-gradient(143.63deg, #276C73 5.43%, #5293E8 110.6%);
+    border-radius: 16px;
+}
+.reviewcard{
+    position: relative;
+    top: 0.5em;
+    right: 0.3em;
+    height: 23vh;
+    width: 20vw;
+    border: 2px solid #E5AF56;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background: #0A0B1A;
+    padding: 2em;
+}
+.cardimg1{
+    height: 5vh; 
+    border-radius: 20px;
+}
+.para{
+    font-size: 11px;
+    margin-top: 0em;
+}
+.profile{
+    display: flex;
+    gap: 1em;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+.para1{
+    position: absolute;
+    font-size: 10px;
+    color: #E5C558;
+    top: 3.5em;
+    left: 6.3em;
+}
+.para2{
+    font-size: 12px;
+    position: absolute;
+    top: 5em;
+    left: 1.5em;
+}
+.headerimg{
+    height: 10vh;
+}
+.mainimg{
+    width: 98.7vw;
+}
+.menuicon{
+    visibility: hidden;
+}
+.showsbg{
+    background-color: #000000;
+    color: #ffffff;
+    height: 130vh;
+}
+.showsheader{
+    display: flex; 
+    gap: 38em;
+    margin-bottom: 2em;
+    margin-top: 2em;       
+}
+.showscard{
+    width: 65vw !important;
+}
+.maindiv{
+    width: auto !important; 
+    background-color: #000000 !important;
+}
+.actorimg{
+    height: 160px;
+    width: 177px
+}
+.mainbg{
+    background: linear-gradient(180deg, rgba(5, 11, 20, 0.28) 0%, rgba(1, 13, 32, 0.69) 67.53%, #0A0B1A 85.33%);
+    position: absolute;
+    height: 110vh;
+    width: 98.6vw;
+}
+
+
+@media (max-width: 768px){
+    .main{
+        gap: 8em !important;
+        margin-left: -5em;
+    }
+    .responsivenav{
+        width: 600px !important;
+    }
+    .list{
+        gap: 1em !important;
+        font-size: 10px;
+        margin-top: 1em !important;
+    }
+    .txt{
+        font-size: 40px !important;
+    }
+    .txt1{
+        font-size: 14px;
+        width: 45vw;
+    }
+    .header{
+        width: 90vw !important;
+    }
+    .heading{
+        width: 40vw !important;
+        left: 6em;
+        top: 7em;
+    }
+    .headerimg{
+        height: 8vh !important;
+        margin-top: 0.6em;
+        margin-right: 10em;
+    }
+    .mainimg{
+        width: 98vw !important;
+        height: 85vh !important;
+    }
+    .searchinput{
+        visibility: hidden;
+    }
+    .search{
+        width: 2vw !important;
+        height: 1vh !important;
+        background: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 0.5em;
+        position: absolute;
+        left: 7em;
+        margin-left: 14em;
+    }
+    .searchicon{
+        font-size: 16px !important;
+    }
+    .businessicon{
+        font-size: 16px !important;
+    }
+    .hide{
+        visibility: hidden;
+    }
+    .hide1{
+        visibility: hidden;
+    }
+    .menuicon{
+        visibility: visible;
+    }
+    .icon1{
+        font-size: 16px !important;
+    }
+    .input1{
+        margin-left: 2em;
+    }
+    .label{
+        left: 6em;
+        top: 22em;
+        width: 70vw;
+    }
+    .circle{
+        width: 16vw;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #ffffff;
+    }
+    .showsheader{
+        display: flex; 
+        gap: 10em;
+        margin-bottom: 2em;
+        margin-top: 2em;       
+    }
+    .showscard{
+        width: 74vw !important;
+    }
+    .img1{
+        height: 250px;
+        width: 17vw;
+    }
+    .background2{
+        height: 250px;
+        width: 17vw;
+    }
+    .reviews{
+        gap: 10em;
+        margin-bottom: 2em;
+    }
+    .background{
+        height: 40vh;
+        width: 24.5vw;
+    }
+    .reviewcard{
+        height: 40vh;
+        width: 24.5vw;
+    }
+    .showsbg{
+        height: 140vh;
+    }
+    .maindiv{
+        width: 100vw !important; 
+        background-color: #000000 !important;
+    }
+    .name{
+        font-size: 10px;
+        margin-bottom: 0em;
+    }
+    .tag{
+        font-size: 9px;
+    }
+    .info{
+        font-size: 10px;
+    }
+    .actorimg{
+        height: 130px;
+        width: 140px
+    }
+    .mainbg{
+        height: 110vh;
+        width: 100vw !important;
+    }
+    /* .hidecard{
+        visibility: hidden;
+    }
+    .hidecard1{
+        visibility: hidden;
+    } */
+}

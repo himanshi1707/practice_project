@@ -9,8 +9,6 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-//import DropDownButton from './DropDownButton';
-//import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
@@ -62,11 +60,29 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function Navbar(props) {
   const [state, setState] = useState({launches: []});
+  const [dropDownValue, setDropDownValue] = useState("");
 
   const fetchData = () =>{
     return fetch('https://api.spacexdata.com/v4/launches')
     .then((response)=>response.json())
     .then((data)=>setState({launches: data}))
+  }
+
+  const handleSelect = (id, e) =>{
+    setDropDownValue(e.target.value);
+    console.log(e.target.value);
+  }
+
+  const fillData = () =>{
+    return(
+      dropDownValue.map((value)=>{
+        return (
+          <div>
+            <h1>{value.name}</h1>
+          </div>
+        )
+      })
+    )
   }
   
   useEffect(()=>{
@@ -103,10 +119,12 @@ export default function Navbar(props) {
                   labelId="demo-simple-select-label"
                   id="demo-simple-select"
                   label="Name"
+                  onChange={handleSelect}
+                  value={dropDownValue}
                 >
                 {state.launches.map((item) => {
-            return (  
-                  <MenuItem value={item.id} key={item.id}>{item.name}</MenuItem>
+                  return (  
+                    <MenuItem value={item.id} key={item.id}>{item.name}</MenuItem>
                   )
                 })}  
                 </Select>
@@ -123,6 +141,7 @@ export default function Navbar(props) {
             </Search>
           </Toolbar>
         </AppBar>
+        <div>{fillData}</div>
       </Box>
     </>
   );
